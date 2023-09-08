@@ -42,3 +42,5 @@ print(solution(10))
 
 print(another_solution(7))
 print(another_solution(10))
+
+

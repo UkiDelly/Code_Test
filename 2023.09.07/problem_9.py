@@ -23,6 +23,8 @@
 
 # 41 > 78은 거짓이기 때문에 0을 return합니다.
 
+from ast import literal_eval
+
 
 # 내 답변
 def solution(ineq: str, eq: str, n: int, m: int) -> int:
@@ -41,7 +43,7 @@ def solution(ineq: str, eq: str, n: int, m: int) -> int:
 def another_solution(ineq: str, eq: str, n: int, m: int) -> int:
     # eval()함수를 사용해서 값을 구한다
     # eval()함수는 문자열로 식을 입력 받아 실행한다.
-    return int(eval(f"{n} {ineq}{eq}  {m}".replace("!", "")))
+    return int(literal_eval(f"{n} {ineq}{eq}  {m}".replace("!", "")))
 
 
 print(another_solution("<", "=", 20, 50))
