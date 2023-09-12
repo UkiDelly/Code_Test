@@ -15,4 +15,15 @@ def solution(l: int, r: int) -> list[int]:
     return answer
 
 
+def another_solution(l: int, r: int) -> list[int]:
+    answer = []
+    for i in range(l, r + 1):
+        if set(str(i)).issubset({"0", "5"}):
+            answer.append(i)
+    if len(answer) == 0:
+        return [-1]
+    return answer
+
+
 print(solution(5, 555))
+print(another_solution(5, 555))
