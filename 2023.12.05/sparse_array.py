@@ -5,4 +5,4 @@ def matchingStrings(strings: list[str], queries: list[str]) -> list[int]:
     return answer
 
 
-print(matchingStrings(["ab", "ab", "abc"], ["ab", "abc", "bc"]))
+print(matchingStrings(["ab", " ab", "abc"], ["ab", "abc", "bc"]))
